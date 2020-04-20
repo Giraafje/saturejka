@@ -1,11 +1,44 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap&subset=latin-ext');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300|Playfair+Display:700&display=swap&subset=latin-ext");
 
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 15px;
+}
+
+body {
+  background-color: #ffefef;
 }
 
 h1,
 h2 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 10rem;
+  height: 5rem;
+}
+
+.uvitani,
+.vybrana {
+  text-align: center;
+}
+
+.ctvercove_obrazky {
+  display: flex;
+  justify-content: center;
+}
+
+.ctvercove_obrazky img {
+  width: 33%;
+  margin: 10px;
+}
+
+.hlavni_nabidka {
+  background-color: #ffffff;
+  margin: 2rem;
+  padding: 2rem;
 }
