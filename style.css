@@ -2,7 +2,14 @@
 
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 
 body {
@@ -12,7 +19,11 @@ body {
 h1,
 h2 {
   font-family: "Playfair Display", serif;
+}
+
+h1 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .logo img {
@@ -22,23 +33,92 @@ h2 {
   height: 5rem;
 }
 
-.uvitani,
-.vybrana {
+.welcome,
+.selected_meals {
   text-align: center;
+  font-size: 1rem;
 }
 
-.ctvercove_obrazky {
+.square_pictures {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.ctvercove_obrazky img {
+.square_pictures img {
   width: 33%;
   margin: 10px;
 }
 
-.hlavni_nabidka {
+.main_menu {
   background-color: #ffffff;
   margin: 2rem;
-  padding: 2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.description p {
+  width: 45%;
+  font-size: 1rem;
+}
+
+.dishes {
+  overflow: auto;
+  margin-top: 2rem;
+}
+
+.display_menu {
+  background-color: #ffefef;
+  margin-top: 1.5rem;
+  padding: 0.6rem;
+}
+
+.salmon,
+.melancholy {
+  float: left;
+  width: 18rem;
+  height: 18rem;
+  margin-right: 6rem;
+}
+
+.salmon_description,
+.melancholy_description {
+  text-align: left;
+}
+
+.tagliatelle {
+  float: right;
+  width: 18rem;
+  height: 18rem;
+  margin-left: 6rem;
+}
+
+.tagliatelle_description {
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+  margin: 3rem;
+}
+
+@media screen and (min-width: 100px) and (max-width: 350px) {
+  .salmon,
+  .tagliatelle,
+  .melancholy {
+    clear: both;
+    width: 8rem;
+    height: 8rem;
+  }
+  .description p {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
